@@ -8,5 +8,6 @@ namespace Payaka.Application.Services.Base
         Task<T> GetById(Guid id);
         Task<List<T>> GetAllAsync();
         Task<List<T>> GetAllAsync(Expression<Func<T, bool>> where);
+        Task<T> RemoveById(Guid id);
     }
 }
